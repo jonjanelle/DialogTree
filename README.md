@@ -3,7 +3,6 @@ A relatively simply dialog tree building system developed for use in an adventur
 
 ## Data Format Example:
  .I knew this day would come.; Psh... | Howdy | Hola
-
 ..You've got some nerve. ; What? | I'm sorry | Who are you?
 
 ...Stay a while, and listen ; You're creepy. | Sure, I've got nowhere to be. | Spoon! [Run away]
