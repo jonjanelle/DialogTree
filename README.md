@@ -20,7 +20,7 @@ A relatively simply dialog tree building system developed for use in an adventur
 
 ..What do you want? ; nada. | tu. | todo.
 
-
+### Explanation
 * Leading periods represent the level in the hierarchy, with the single-period statement being the root node. 
 * Statements said by non-player entities appear to the left of the semicolon, and player reponse options are to the right separated by the '|' character.
 * The position of an item in the user response options corresponds to the location of the next message in the dialog tree. 
