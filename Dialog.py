@@ -61,8 +61,6 @@ def loadMessage(fileName):
                 lastMsg.prevMessage.messageLinks.append(None)
                 nLinks+=1
             
-            
-            
         lastMsg=newMsg
         prevLevel = level
     return root.messageLinks[0]
