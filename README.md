@@ -30,4 +30,4 @@ A relatively simply dialog tree building system developed for use in an adventur
 Thus:
 * 'Psh..' leads to 'You've got some nerve'
 * 'Howdy' to 'She gives you a silent, stern glare'
-* 'Hola' to 'What do you want'?
+* 'Hola' to 'What do you want?'
