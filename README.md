@@ -2,23 +2,16 @@
 A relatively simply dialog tree building system developed for use in an adventure game project. Uses a linked list approach an a custom data storage format. 
 
 ## Data Format Example:
- .I knew this day would come.; Psh... | Howdy | Hola
- 
-..You've got some nerve. ; What? | I'm sorry | Who are you?
+.Stop right there!; Whatever. | Howdy | Bye.
 
-...Stay a while, and listen ; You're creepy. | Sure, I've got nowhere to be. | Spoon! [Run away]
+..Excuse me? ; You're excused. | I'm sorry. | Bye.
+...This isn't going well. ; Okay, bye then. 
+...No problem, go right ahead! ; Thanks, have a nice day!
 
-...Would you like some tea? ; Coffeeeeee! [Attack!] | I thought you'd never ask
+..She gives you a silent, stern glare ; WOOOO! | Bloop! | Glorp!
+...What?; See ya! [Run away] | Yay dinosaurs! [Run away] 
 
-...I don't...I can remember!; boooooooooooring
-
-..She gives you a silent, stern glare ; WOOOO! | Bloop | Glip!
-
-...oh frip frap; grawr | dinosaurs are cool |
-
-...SHOW ME WHAT YOU'VE GOT.; okey dokey | ground sloths love avocados | time to get schwifty
-
-..What do you want? ; nada. | tu. | todo.
+..Bye bye! ; [Wave with gusto]
 
 ### Explanation
 * Leading periods represent the level in the hierarchy, with the single-period statement being the root node. Each dialog tree must have exactly one root node. 
@@ -26,9 +19,10 @@ A relatively simply dialog tree building system developed for use in an adventur
 * Player response options are separated by the '|' character.
 * The position of an item in the user response options corresponds to the location of the next message in the dialog tree. 
 
-* If the user says "Psh.." first, then the first message in the next level is chosen as 'Psh..' was the first option. 
+* If the user chooses "Whatever", the first option in level 1, then "Excuse me?" is next because it is the first level 2 message.   
 
-Thus:
-* 'Psh..' leads to 'You've got some nerve'
-* 'Howdy' to 'She gives you a silent, stern glare'
-* 'Hola' to 'What do you want?'
+Similarly in level 1:
+* 'Howdy' --> 'She gives you a silent, stern glare'
+* 'Bye' --> 'Bye bye!'
+
+This pattern is continued throughout subsequent levels. 
