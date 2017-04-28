@@ -5,10 +5,13 @@ A relatively simply dialog tree building system developed for use in an adventur
 .Stop right there!; Whatever. | Howdy | Bye.
 
 ..Excuse me? ; You're excused. | I'm sorry. | Bye.
+
 ...This isn't going well. ; Okay, bye then. 
+
 ...No problem, go right ahead! ; Thanks, have a nice day!
 
 ..She gives you a silent, stern glare ; WOOOO! | Bloop! | Glorp!
+
 ...What?; See ya! [Run away] | Yay dinosaurs! [Run away] 
 
 ..Bye bye! ; [Wave with gusto]
