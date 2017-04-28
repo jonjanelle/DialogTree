@@ -1,5 +1,5 @@
 # Dialog Tree
-A relatively simply dialog tree building system developed for use in an adventure game project. Uses a linked list approach an a custom data storage format. 
+A simple dialog tree creation system developed for use in an adventure game project. Messages are stored in a doubly linked list and conversations can be composed in plain-text within an easy to use format. 
 
 ## Data Format Example:
 .Stop right there!; Whatever. | Howdy | Bye.
