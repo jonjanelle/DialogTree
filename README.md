@@ -18,8 +18,11 @@ A relatively simply dialog tree building system developed for use in an adventur
 
 ### Explanation
 * Leading periods represent the level in the hierarchy, with the single-period statement being the root node. Each dialog tree must have exactly one root node. 
+
 * Player and non-player text is separated by a semicolon. Statements said by non-player entities appear to the left of the semicolon, and player reponse options appear to the right.
+
 * Player response options are separated by the '|' character.
+
 * The position of an item in the user response options corresponds to the location of the next message in the dialog tree. 
 
 * If the user chooses "Whatever", the first option in level 1, then "Excuse me?" is next because it is the first level 2 message.   
