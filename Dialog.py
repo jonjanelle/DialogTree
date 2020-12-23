@@ -32,7 +32,7 @@ def loadMessage(fileName):
         if len(line)==0:
             continue
         parts = line.split(";")
-        print parts
+        print(parts)
         #Get other entity's message text
         otherMsg = parts[0].strip()
         #Get array of string user responses by splitting on the '|'
@@ -72,13 +72,13 @@ def loadMessage(fileName):
 def showDialog(rootMessage):
     current = rootMessage
     while current!=None:
-        print "\nNPC: "+current.otherMessage
+        print("\nNPC: "+current.otherMessage)
         choice = 1
         for option in current.userOptions:
-            print str(choice)+". "+option
+            print(str(choice)+". "+option)
             choice+=1
 
-        nextIndex = raw_input("Select an option: ")
+        nextIndex = input("Select an option: ")
         if current.messageLinks==None:
             current = current.messageLinks
         else:
